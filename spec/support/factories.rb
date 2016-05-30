@@ -19,6 +19,17 @@ FactoryGirl.define do
 
   factory :playlist do
     name
+    #
+    # factory :playlist_with_songs do
+    #   transient do
+    #     songs_count 3
+    #   end
+    # end
+    #
+    # after(:create) do |playlist, evaluator|
+    #   create_list(:song, evaluator.songs_count, playlist: playlist)
+    # end
   end
+
 
 end
