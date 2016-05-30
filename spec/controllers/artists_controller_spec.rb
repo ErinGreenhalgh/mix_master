@@ -59,7 +59,7 @@ RSpec.describe ArtistsController, type: :controller do
     end
 
     context 'with invalid params' do
-      it "assigns a newly created butunsaved artist as @artist" do
+      it "assigns a newly created but unsaved artist as @artist" do
         post :create, {:artist => attributes_for(:artist, name: nil)}
         expect(assigns(:artist)).to be_a_new(Artist)
       end
