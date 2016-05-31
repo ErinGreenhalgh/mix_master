@@ -15,6 +15,8 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+OmniAuth.config.test_mode = true 
+
 
 ActiveRecord::Migration.maintain_test_schema!
 
